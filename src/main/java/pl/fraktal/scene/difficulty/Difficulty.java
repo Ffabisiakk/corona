@@ -25,18 +25,10 @@ public class Difficulty {
         final Button source = (Button) event.getSource();
 
         switch (source.getId()) {
-            case "easy":
-                Configuration.setDifficulty(Difficulties.EASY);
-                break;
-            case "medium":
-                Configuration.setDifficulty(Difficulties.MEDIUM);
-                break;
-            case "hard":
-                Configuration.setDifficulty(Difficulties.HARD);
-                break;
-            case "hell":
-                Configuration.setDifficulty(Difficulties.HELL);
-                break;
+            case "easy" -> Configuration.setDifficulty(DifficultyLevel.EASY);
+            case "medium" -> Configuration.setDifficulty(DifficultyLevel.MEDIUM);
+            case "hard" -> Configuration.setDifficulty(DifficultyLevel.HARD);
+            case "hell" -> Configuration.setDifficulty(DifficultyLevel.HELL);
         }
 
         Stage stage = (Stage) difficultyAnchorPane.getScene().getWindow();
@@ -48,6 +40,7 @@ public class Difficulty {
             stage.show();
         } catch (IOException ioe) {
             System.out.println("ERROR: " + ioe.getMessage());
+            ioe.printStackTrace();
         }
     }
 

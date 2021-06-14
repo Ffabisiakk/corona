@@ -1,5 +1,5 @@
 package pl.fraktal.scene.difficulty;
 
-public enum Difficulties {
+public enum DifficultyLevel {
     EASY, MEDIUM, HARD, HELL
 }

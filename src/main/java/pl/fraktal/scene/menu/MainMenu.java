@@ -29,6 +29,7 @@ public class MainMenu {
             stage.show();
         } catch (IOException ioe) {
             System.out.println("ERROR: " + ioe.getMessage());
+            ioe.printStackTrace();
         }
     }
 

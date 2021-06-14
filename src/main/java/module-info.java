@@ -12,4 +12,5 @@ module pl.fraktal {
     opens pl.fraktal.scene.menu;
     opens pl.fraktal.scene.score;
     opens pl.fraktal.util;
+    opens pl.fraktal.model;
 }
